@@ -1,0 +1,173 @@
+/* Général */
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins.ttf);
+}
+@font-face {
+    font-family: Poppins-bold;
+    src: url(../fonts/Poppins-Medium.ttf);
+    font-weight: bold;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+.blue {
+    background-color: #0475ba;
+    color: white;
+}
+.white {
+    background-color: white;
+}
+.blue h2 {
+    font-weight: bold;
+}
+.blue, .white {
+    padding: 40px 0 40px 0;
+}
+.white h2 {
+    color: #0475ba;
+}
+h2 {
+    padding-bottom: 20px;
+}
+.bold {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.restrict {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+p {
+    margin: 5px 0 5px 0;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: #add0e6;
+}
+
+/* Barre de navigation */
+nav, .flex {
+    display: flex;
+    justify-content: flex-start;
+}
+nav {
+    height: 50px;
+    background-color: #0475ba;
+    color: white;
+    padding: 20px 0 0 20px;
+}
+#name {
+    margin-right: 70px;
+}
+nav li {
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+/* Nom-Prénom-Photo */
+.identite {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.identite img {
+    align-self: flex-end;
+    border: none;
+    border-radius: 750px;
+    width: 15vw;
+    height: 15vw;
+    box-shadow: 2px 2px 5px grey;
+}
+.identite div {
+    text-align: center;
+
+}
+
+/* Expériences professionnelles */
+.inline {
+    display: flex;
+    justify-content: space-between;
+}
+.description {
+    margin: 10px 0 10px 0;
+}
+
+/* Contact */
+.contact {
+    padding-left: 50px;
+}
+
+/* Media queries */
+@media (max-width: 1000px) {
+    html {
+        font-size: 90%;
+    }
+    .restrict {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+@media (max-width: 910px)  {
+    html {
+        font-size: 75%;
+    }
+    nav {
+        justify-content: center;
+        padding: 20px 0 0 0;
+    }
+    .formations, .passions, .presentation, .xp-pro {
+        text-align: center;
+    }
+    .presentation ul li {
+        list-style-type: none;
+    }
+    .inline {
+        display: flex;
+        flex-direction: column;
+    }
+    .formations .right {
+        margin-bottom: 10px;
+    }
+    .right, .bold {
+        margin-top: 0;
+    }
+    .right {
+        font-size: 72%;
+    }
+}
+@media (max-width: 700px) {
+    .identite {
+        flex-direction: column;
+    }
+    .identite img {
+        align-self: center;
+    }
+    .restrict {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .contact {
+        padding-left: 100px;
+    }
+}
+@media (max-width: 615px) {
+    .restrict {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    h2 {
+        text-align: center;;
+    }
+}
+@media (max-width: 480px) {
+    body {
+        width: 480px;
+    }
+
+}

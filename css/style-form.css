@@ -1,0 +1,59 @@
+/* Marges et positionnement formulaire */
+.form {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 50px 0;
+}
+.area {
+    margin: 30px 0 30px;
+}
+input {
+    width: 35vw;
+}
+textarea {
+    width: 35vw;
+    height: 15vw;
+}
+
+/* Titre Contact */
+.white {
+    text-align: center;
+}
+h2 {
+    color: #0475ba;
+}
+
+/* Customisation des champs */
+.hover:hover {
+    background-color: #add0e6;
+}
+
+/* Bouton */
+.custom-button {
+    border-radius: 60px;
+    border: none;
+    background-color: #0475ba;
+    width: 20vw;
+    height: 40px;
+    color: white;
+}
+.custom-button:hover {
+    background-color: white;
+    color: #0475ba;
+    border: solid 1px #0475ba;
+}
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+/* Media Query */
+@media (max-width: 480px) {
+    input {
+        min-width: 200px;
+    }
+    textarea {
+        width: 200px;
+        height: 100px;
+    }
+}
