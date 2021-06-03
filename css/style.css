@@ -100,7 +100,11 @@ nav li {
 
 /* Contact */
 .contact {
-    padding-left: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.fas, .fab {
+    margin-right: 10px;
 }
 
 /* Media queries */
@@ -121,16 +125,10 @@ nav li {
         justify-content: center;
         padding: 20px 0 0 0;
     }
-    .formations, .passions, .presentation, .xp-pro {
-        text-align: center;
-    }
     .presentation ul li {
         list-style-type: none;
     }
-    .inline {
-        display: flex;
-        flex-direction: column;
-    }
+
     .formations .right {
         margin-bottom: 10px;
     }
@@ -152,14 +150,11 @@ nav li {
         margin-left: 100px;
         margin-right: 100px;
     }
-    .contact {
-        padding-left: 100px;
-    }
 }
 @media (max-width: 615px) {
     .restrict {
-        margin-left: 0px;
-        margin-right: 0px;
+        margin-left: 30px;
+        margin-right: 30px;
     }
     h2 {
         text-align: center;;
