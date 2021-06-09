@@ -32,6 +32,9 @@
 h2 {
     padding-bottom: 20px;
 }
+h2:hover {
+    animation: titleHover 2s;
+}
 .bold {
     font-weight: bold;
     margin-top: 10px;
@@ -62,6 +65,9 @@ nav {
     color: white;
     padding: 20px 0 0 20px;
 }
+.flex {
+    padding-top: 5px;
+}
 #name {
     margin-right: 70px;
 }
@@ -75,6 +81,7 @@ nav li {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    animation: scaleUp 3s;
 }
 .identite img {
     align-self: flex-end;
@@ -83,10 +90,11 @@ nav li {
     width: 15vw;
     height: 15vw;
     box-shadow: 2px 2px 5px grey;
+    animation: slideFromLeft 3s;
 }
 .identite div {
     text-align: center;
-
+    animation: slideFromRight 2s;
 }
 
 /* Expériences professionnelles */
@@ -159,10 +167,49 @@ nav li {
     h2 {
         text-align: center;;
     }
+    h2:hover {
+        animation: titleHover 2s;
+        padding-left: 0;
+    }
 }
 @media (max-width: 480px) {
     body {
         width: 480px;
     }
+}
 
+/* Animations */
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-250px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slideFromRight {
+    from {
+        transform: translateX(250px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes scaleUp {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+@keyframes titleHover {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.5);
+        color: black;
+    }
 }
