@@ -71,6 +71,9 @@ hr {
     .assignment-center {
         text-align: center;
     }
+    .margin-top {
+        visibility: hidden;
+    }
 
 } 
 
