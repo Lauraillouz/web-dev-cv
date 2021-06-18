@@ -2,11 +2,8 @@
 .margin-bottom {
     margin-bottom: 20px;
 }
-ul li {
-    list-style-type: none;
-}
 
-/* Responsive images */
+/*  Images */
 .image-resize {
     max-width: 30vw;
 }
@@ -15,13 +12,12 @@ ul li {
 }
 
 /* Titres */
-.job-other {
+.job-other, .tech-color {
     padding-top: 10px;
     color: #add0e6;
 }
 .job-other:hover {
     color: #764ba2;
-
 }
 
 /* Réglages texte */
@@ -39,8 +35,10 @@ ul li {
 .assignment-title {
     font-family: Poppins-bold;
 }
-.center {
-    text-align: center;
+
+/* Détails mise en page */
+.margin-top {
+    margin-top: 20px;
 }
 
 /* Lignes horizontales */
@@ -50,7 +48,7 @@ hr {
     border: none;
     height: 1px;
 }
-.margin-top {
+.margin-top, .line-margin-top {
     margin-top: 50px;
 }
 
@@ -71,7 +69,7 @@ hr {
     .assignment-center {
         text-align: center;
     }
-    .margin-top {
+    .line-margin-top {
         visibility: hidden;
     }
 

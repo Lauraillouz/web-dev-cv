@@ -51,6 +51,12 @@ a {
 a:hover {
     color: #add0e6;
 }
+.center {
+    text-align: center;
+}
+ul li {
+    list-style-type: none;
+}
 
 /* Barre de navigation */
 nav, .flex {
@@ -104,6 +110,11 @@ nav li {
 }
 .job {
     color: #8f97df;
+}
+
+/* Passions */
+.black {
+    color: black;
 }
 
 /* Contact */
