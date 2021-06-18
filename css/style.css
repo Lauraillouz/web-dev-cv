@@ -14,11 +14,8 @@
     font-family: Poppins;
 }
 .blue {
-    background-color: #0475ba;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
-}
-.white {
-    background-color: white;
 }
 .blue h2 {
     font-weight: bold;
@@ -27,13 +24,14 @@
     padding: 40px 0 40px 0;
 }
 .white h2 {
-    color: #0475ba;
+    color: #667eea;
 }
 h2 {
     padding-bottom: 20px;
 }
 h2:hover {
     animation: titleHover 2s;
+    color: black;
 }
 .bold {
     font-weight: bold;
@@ -61,8 +59,7 @@ nav, .flex {
 }
 nav {
     height: 50px;
-    background-color: #0475ba;
-    color: white;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);    color: white;
     padding: 20px 0 0 20px;
 }
 .flex {
@@ -89,7 +86,6 @@ nav li {
     border-radius: 750px;
     width: 15vw;
     height: 15vw;
-    box-shadow: 2px 2px 5px grey;
     animation: slideFromLeft 3s;
 }
 .identite div {
@@ -104,6 +100,10 @@ nav li {
 }
 .description {
     margin: 10px 0 10px 0;
+    color: rgb(65, 65, 65);
+}
+.job {
+    color: #8f97df;
 }
 
 /* Contact */
@@ -150,6 +150,7 @@ nav li {
 @media (max-width: 700px) {
     .identite {
         flex-direction: column;
+        padding-top: 10px;
     }
     .identite img {
         align-self: center;
@@ -168,7 +169,6 @@ nav li {
         text-align: center;;
     }
     h2:hover {
-        animation: titleHover 2s;
         padding-left: 0;
     }
 }
@@ -179,7 +179,6 @@ nav li {
 }
 
 /* Animations */
-
 @keyframes slideFromLeft {
     from {
         transform: translateX(-250px);
@@ -210,6 +209,24 @@ nav li {
     }
     to {
         transform: scale(1.5);
-        color: black;
     }
+}
+@keyframes animate {
+    0% {
+        content: "(React/Redux)";
+    }
+    25% {
+        content: "(Node)";
+    }
+
+    50% {
+        content: "(Express)";
+    }
+    75% {
+        content: "(MongoDB)";
+    }
+}
+.typing-animation::after {
+    content: "(React/Redux)";
+    animation: animate infinite 5s;
 }

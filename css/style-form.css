@@ -21,7 +21,7 @@ textarea {
     padding-bottom: 0;
 }
 h2 {
-    color: #0475ba;
+    color: #667eea;
 }
 
 /* Customisation des champs */
@@ -33,15 +33,15 @@ h2 {
 .custom-button {
     border-radius: 60px;
     border: none;
-    background-color: #0475ba;
+    background-color: #667eea;
     width: 20vw;
     height: 40px;
     color: white;
 }
 .custom-button:hover {
     background-color: white;
-    color: #0475ba;
-    border: solid 1px #0475ba;
+    color: #667eea;
+    border: solid 1px #667eea;
 }
 .button {
     display: flex;

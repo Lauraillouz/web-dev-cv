@@ -1,0 +1,66 @@
+/* Général à la page */
+.margin-bottom {
+    margin-bottom: 20px;
+}
+ul li {
+    list-style-type: none;
+}
+
+/* Responsive images */
+.image-resize {
+    max-width: 30vw;
+}
+.image-resize:hover {
+    animation: imageHover 3s;
+}
+
+/* Titres */
+.job-other {
+    padding-top: 10px;
+    color: #add0e6;
+}
+
+/* Réglages texte */
+.assignment-box {
+    margin-left: 20px;
+    text-align: justify;
+    align-self: center;;
+}
+.assignment {
+    padding-top: 10px;
+}
+.assignment-top-margin {
+    margin-top : 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .image-resize {
+        max-width: 250px;
+    }
+    .flex-portfolio {
+        flex-direction: column;
+        align-items: center;
+    }
+    .job-portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;;
+    }
+    .assignment-center {
+        text-align: center;
+    }
+
+} 
+
+/* Animation */
+@keyframes imageHover {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+
