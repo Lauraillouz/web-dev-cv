@@ -24,7 +24,7 @@
 .assignment-box {
     margin-left: 20px;
     text-align: justify;
-    align-self: center;;
+    align-self: center;
 }
 .assignment {
     padding-top: 10px;
@@ -50,6 +50,10 @@ hr {
 }
 .margin-top, .line-margin-top {
     margin-top: 50px;
+}
+.seperate {
+    height: 2px;
+    border: none;
 }
 
 /* Media Queries */
