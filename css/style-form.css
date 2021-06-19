@@ -23,6 +23,10 @@ textarea {
 h2 {
     color: #667eea;
 }
+.top-margin {
+    margin-top: 2rem;
+
+}
 
 /* Customisation des champs */
 .hover:hover {

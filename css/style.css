@@ -21,13 +21,13 @@
     font-weight: bold;
 }
 .blue, .white {
-    padding: 40px 0 40px 0;
+    padding: 3rem 0 3rem 0;
 }
 .white h2 {
     color: #667eea;
 }
 h2 {
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
 }
 h2:hover {
     animation: titleHover 2s;
@@ -61,22 +61,24 @@ ul li {
 /* Barre de navigation */
 nav, .flex {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 nav {
-    height: 50px;
+    height: 4rem;
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);    color: white;
-    padding: 20px 0 0 20px;
 }
 .flex {
     padding-top: 5px;
 }
 #name {
-    margin-right: 70px;
+    margin: 1.3rem 1.3rem 1.3rem 1rem;
 }
 nav li {
-    margin-left: 20px;
+    margin-left: 1.5rem;
     list-style-type: none;
+}
+nav ul {
+    margin: 1rem 1rem 1rem 0;
 }
 
 /* Nom-Prénom-Photo */
@@ -142,7 +144,6 @@ nav li {
     }
     nav {
         justify-content: center;
-        padding: 20px 0 0 0;
     }
     .presentation ul li {
         list-style-type: none;
