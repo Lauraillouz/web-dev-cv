@@ -13,9 +13,13 @@
     padding: 0;
     font-family: Poppins;
 }
+html {
+    background-color: #FFFDF9;
+    color: rgba(0,74,173,1);
+}
 .blue {
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: linear-gradient(120deg, rgba(0,194,203,1) 0%, rgba(0,74,173,1) 100%);
+    color: #FFFDF9;
 }
 .blue h2 {
     font-weight: bold;
@@ -23,15 +27,17 @@
 .blue, .white {
     padding: 3rem 0 3rem 0;
 }
-.white h2 {
-    color: #667eea;
+.pink h2 {
+    color: #FF66C4;
 }
 h2 {
     padding-bottom: 2rem;
 }
 h2:hover {
     animation: titleHover 2s;
-    color: black;
+}
+.pink:hover {
+    color: #FF66C4;
 }
 .bold {
     font-weight: bold;
@@ -44,18 +50,28 @@ h2:hover {
 p {
     margin: 5px 0 5px 0;
 }
-a {
+nav a, footer a {
     color: white;
     text-decoration: none;
 }
+a {
+    color: #CB6CE6;
+}
 a:hover {
-    color: #add0e6;
+    color: #FF66C4;
 }
 .center {
     text-align: center;
 }
 ul li {
     list-style-type: none;
+}
+.italic {
+    font-style: italic;
+    color: #FF66C4;
+}
+.margin-top {
+    margin-top: 40px;
 }
 
 /* Barre de navigation */
@@ -65,7 +81,8 @@ nav, .flex {
 }
 nav {
     height: 4rem;
-    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);    color: white;
+    background: linear-gradient(120deg, rgba(0,194,203,1) 0%, rgba(0,74,173,1) 100%);
+    color: white;
 }
 .flex {
     padding-top: 5px;
@@ -86,7 +103,6 @@ nav ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    animation: scaleUp 3s;
 }
 .identite img {
     align-self: flex-end;
@@ -101,6 +117,27 @@ nav ul {
     animation: slideFromRight 2s;
 }
 
+/* Logiciels/Technologies */
+.first {
+    margin-left: 15px;
+}
+.block {
+    display: block;
+}
+.icon {
+    max-width: 13px;
+    height: auto;
+}
+.icon-special {
+    max-width: 20px;
+}
+.first-special {
+    margin-left: 8px;
+}
+.white-text {
+    color: white;
+}
+
 /* Expériences professionnelles */
 .inline {
     display: flex;
@@ -111,12 +148,12 @@ nav ul {
     color: rgb(65, 65, 65);
 }
 .job {
-    color: #8f97df;
+    color: #CB6CE6;
 }
 
 /* Passions */
 .black {
-    color: black;
+    color: rgba(0,74,173,1);
 }
 
 /* Contact */
@@ -222,23 +259,4 @@ nav ul {
     to {
         transform: scale(1.5);
     }
-}
-@keyframes animate {
-    0% {
-        content: "(React/Redux)";
-    }
-    25% {
-        content: "(Node)";
-    }
-
-    50% {
-        content: "(Express)";
-    }
-    75% {
-        content: "(MongoDB)";
-    }
-}
-.typing-animation::after {
-    content: "(React/Redux)";
-    animation: animate infinite 5s;
 }

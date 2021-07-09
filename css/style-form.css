@@ -21,7 +21,7 @@ textarea {
     padding-bottom: 0;
 }
 h2 {
-    color: #667eea;
+    color: #CB6CE6;
 }
 .top-margin {
     margin-top: 2rem;
@@ -32,20 +32,29 @@ h2 {
 .hover:hover {
     background-color: #add0e6;
 }
+input, textarea {
+    border: 1px solid lightgray;
+}
+input {
+    border-radius: 50px;
+}
+textarea {
+    border-radius: 15px;
+}
 
 /* Bouton */
 .custom-button {
     border-radius: 60px;
     border: none;
-    background-color: #667eea;
+    background-color: #CB6CE6;
     width: 20vw;
     height: 40px;
     color: white;
 }
 .custom-button:hover {
     background-color: white;
-    color: #667eea;
-    border: solid 1px #667eea;
+    color: #FF66C4;
+    border: solid 1px #FF66C4;
 }
 .button {
     display: flex;
